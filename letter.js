@@ -1,15 +1,15 @@
 // constructor for letters
 
-function letter(options){
-  this.character = options;
+function Letter(guessLetter){
+  this.char = guessLetter;
   this.appear = false;
 
-  this.lRender = function(){
-    if(this.character == false){
-      return " ";
+  this.letDisplay = function(){
+    if(this.char == false){
+      return " - ";
     }
     else{
-      return this.character;
+      return this.char;
     }
   }
 };
